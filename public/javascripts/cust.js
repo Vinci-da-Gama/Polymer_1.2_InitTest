@@ -1,8 +1,7 @@
 // jQuery Js Document
 $(document).ready(function() {
-	notice ();
-	initWow ();
-	alert(window.location);
+	// notice ();
+	// initWow ();
 });
 
 function notice () {
