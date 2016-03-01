@@ -27,7 +27,17 @@
 (function () {
 	var rM = angular.module('polymerOne.router');
 
-	// rM
+	rM.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
+		$urlRouterProvider.otherwise('/');
+
+		$stateProvider
+		.state('home', {
+			url: '/',
+			templateUrl: './_partials/home.html',
+			controller: 'homeCtrl'
+		});
+
+	}]);
 
 })();
 (function () {
@@ -37,7 +47,9 @@
 (function () {
 	var ctrlM = angular.module('polymerOne.ctrl');
 
-	// ctrlM
+	ctrlM.controller('homeCtrl', ['$scope', function($scope){
+		console.log('homeCtrl');
+	}]);
 
 })();
 (function () {

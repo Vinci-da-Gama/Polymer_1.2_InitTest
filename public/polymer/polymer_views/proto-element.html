@@ -1,0 +1,12 @@
+<link rel="import" href="../polymerHtmlLib/polymer.html">
+
+<script>
+	// Register a new Element called proto-element.
+	Polymer({
+		is: 'proto-element',
+		// use lifecycle callback to setup this element content.
+		ready: function () {
+			this.textContent = "This is An register element. Name is: 'proto-element'.";
+		}
+	});
+</script>

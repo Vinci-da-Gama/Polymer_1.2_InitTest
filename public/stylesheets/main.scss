@@ -11,6 +11,8 @@ $bgHorizontal: center;
 $bgRepeat: no-repeat;
 $bgSize: cover;
 $bgBlue: rgba(20, 120, 200, .99);
+$titleBlue: rgba(12, 148, 254, .99);
+$shinningYellow: rgba(254, 224, 0, .99);
 /* vender prefix */
 $venderList: "-webkit-", "-moz-", "-ms-", "-o-", "";
 
@@ -18,5 +20,15 @@ body.basictorso
 {
 	@include extendFlex($zp);
 	@include fontSmooth();
+	em {
+		color: $titleBlue;
+		font-weight: bold;
+	}
 }
 
+div.domscss-external {
+	display: inline-block;
+    background-color: $shinningYellow;
+    border-radius: 8px;
+    padding: 4px;
+}

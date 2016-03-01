@@ -1,0 +1,16 @@
+<link rel="import" href="../polymerHtmlLib/polymer.html">
+
+<dom-module id="data-bind-name">
+		
+	<template>
+		<p>The name binded here is <b>{{theName}}.</b>This is data bind testing.</p>
+	</template>
+	<script>
+		Polymer({
+			is: 'data-bind-name',
+			ready: function () {
+				this.theName = "Wuqiha_Sasike";
+			}
+		});
+	</script>
+</dom-module>

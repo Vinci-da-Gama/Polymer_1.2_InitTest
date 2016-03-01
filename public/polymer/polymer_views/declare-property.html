@@ -1,0 +1,22 @@
+<link rel="import" href="../polymerHtmlLib/polymer.html">
+
+<dom-module id="declare-property">
+	<template>
+		<p>This is declare-property element. The property is called: <b>{{randomAttr}}</b>.</p>
+	</template>
+	<script>
+		(function() {
+			'use strict';
+
+			Polymer({
+				is: 'declare-property',
+				properties: {
+					randomAttr: {
+						type: String,
+						value: "random-value"
+					}
+				}
+			});
+		})();
+	</script>
+</dom-module>

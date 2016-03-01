@@ -1,0 +1,17 @@
+<link rel="import" href="../polymerHtmlLib/polymer.html">
+
+<dom-module id="dom-external-css">
+	<template>
+		<div class="domscss-external">
+			<!-- the image or any childs are rendered in content tag. -->
+			<content></content>
+			<p>The image or any childs are rendered in this content tag.</p>
+		</div>
+		<p>External Css Style is allowed.</p>
+	</template>
+	<script>
+		Polymer({
+			is: 'dom-external-css'
+		});
+	</script>
+</dom-module>

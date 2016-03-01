@@ -1,0 +1,25 @@
+<link rel="import" href="../polymerHtmlLib/polymer.html">
+
+<dom-module id="image-dom-frame">
+	<template>
+		<style>
+			div {
+				display: inline-block;
+		        background-color: #ccc;
+		        border-radius: 8px;
+		        padding: 4px;
+			}
+		</style>
+		<div>
+			<!-- the image or any childs are rendered in content tag. -->
+			<content></content>
+			<p>This is image in Local DOM Element.</p>
+		</div>
+		<p>You also can add Multiple HTML Tags.</p>
+	</template>
+	<script>
+		Polymer({
+			is: 'image-dom-frame'
+		});
+	</script>
+</dom-module>
