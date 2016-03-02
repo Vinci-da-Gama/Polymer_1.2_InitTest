@@ -26,6 +26,14 @@ body.basictorso
 	}
 }
 
+.clear-margin {
+	margin: 0 !important;
+}
+
+.text-anyalign {
+	text-align: center;
+}
+
 div.domscss-external {
 	display: inline-block;
     background-color: $shinningYellow;

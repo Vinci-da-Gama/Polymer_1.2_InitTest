@@ -1,12 +1,13 @@
 <link rel="import" href="../polymerHtmlLib/polymer.html">
 <!-- iron-input is copy from github, but it doesn't work. -->
-<link rel="import" href="../polymerHtmlLib/iron-input.html">
+<link rel="import" href="../polymerHtmlLib/allIron/iron-input.html">
 
 <dom-module id="edit-syn-data">
 	<template>
 		<p>the editable data is <b>{{editableData}}</b>.<br>
 			This name would be synced when input.
-			<strong>It is not success, due to don't konw how to get iron-input.html</strong>
+			<br>
+			<strong>Although it is success, but need manully download dependencies. Sth is wrong.</strong>
 		</p>
 		<input is="iron-input" bind-value="{{editableData}}" placeholder="editable data...">
 	</template>

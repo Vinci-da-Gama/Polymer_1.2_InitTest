@@ -142,10 +142,10 @@ $(document).ready(function() {
 	// initWow ();
 });
 
-function notice () {
-	alert('pls, disable this function.');
-}
+// function notice () {
+// 	alert('pls, disable this function.');
+// }
 
-function initWow () {
-	new WOW().init();
-}
+// function initWow () {
+// 	new WOW().init();
+// }
